@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+
+body {
+    background-color: #212121;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: stretch;
+    padding-top: 5vh;
+}
+
+.hori {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+
+.hori > * {
+    flex: 1 100%;
+}
+
+@media all and (min-width: 768px)  {
+    .hori > * {
+        flex: 1 auto;
+    }
+}
+
+/*.container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: stretch;
+    padding-top: 5vh;
+}
+
+form {
+    background-color: #f28a37;
+    width: 400px;
+    height: 45px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+input {
+    all: unset;
+    font: 16px system-ui;
+    color: #fff;
+    height: 100%;
+    width: 100%;
+    padding: 6px 10px;
+}
+
+::placeholder {
+    color: #212121;
+    opacity: 0.7;
+}
+
+button {
+    all: unset;
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+}
+
+.searchbuttons {
+    color: #fff;
+    fill: currentColor;
+    width: 24px;
+    height: 24px;
+    padding: 10px;
+}
+
+}
+.tags {
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.atoz {
+    background-color: #f28a37;
+    width: auto;
+    height: 32px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.atoz > button {
+    padding: 1vw;
+    text-align: center;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.v-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.h-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    max-width:10vw;
+}
+.card {
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    height: 20vw;
+    width: 30vw;
+    border: 3px solid;
+}
+.card > a > img {
+    height:auto;
+    width: 100%;
+    max-width: 50%;
+}
+span {
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    font-size: 16px;
+}
+
+@media all and (max-width: 768px)  {
+    .hori > * {
+        flex: 1 55%;
+    }
+}
+*/
