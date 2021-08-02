@@ -10,7 +10,7 @@
   <body onload="loadFunctions()">
     <div class="container">
       <div class="hori">
-        <img style="max-height:30vw;width:50%;" src="https://cdn.discordapp.com/attachments/842945751288905749/854085386414718996/unknown.png">
+        <img class="main-logo" src="https://cdn.discordapp.com/attachments/842945751288905749/854085386414718996/unknown.png">
       </div>
       <!-- The duckDuckgo button -->
       <div class="hori">
@@ -27,7 +27,7 @@
 
       <div class="hori">
         <!-- The Real button :) -->
-        <form style="width:300;" id="break" role="search">
+        <form id="break" role="search">
           <input type="search" id="query" name="q" placeholder="Search Our Tools..." aria-label="Search through site content">
           <button>
             <svg class="searchbuttons" viewBox="0 0 1024 1024">
@@ -35,13 +35,8 @@
             </svg>
           </button>
         </form>
-      </div>
-      <div class="hori">
-        <div class="hori">
-
-        </div>
         <div class="atoz">
-          <button onclick="cycledown()"></button>
+          <button onclick="cycledown()"><</button>
           <select id="letters">
             <option value="a">A</option>
             <option value="b">B</option>
