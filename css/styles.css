@@ -1,9 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
 
+html {
+    position: relative;
+    min-height: 100%;
+}
+
 body {
     background-color: #212121;
     margin: 0;
+    position: relative;
 }
+
+/* Mobile First */
 
 .container {
     display: flex;
@@ -17,14 +25,14 @@ body {
 .hori {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-around;
     padding-top: 2vh;
     padding-bottom: 2vh;
 }
 
 .hori > * {
-    max-width: 60vw;
+    max-width: 80vw;
     flex: 1 100%;
 }
 
@@ -36,7 +44,6 @@ body {
 form {
     background-color: #f28a37;
     width: 400px;
-    height: 45px;
     border-radius: 5px;
     display: flex;
     flex-direction: row;
@@ -74,9 +81,8 @@ button {
 
 .atoz {
     background-color: #f28a37;
-    max-width: 33vw;
-    height: 32px;
     border-radius: 5px;
+    max-width: 30vw;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -87,11 +93,65 @@ button {
     text-align: center;
 }
 
-/*@media all and (min-width: 768px)  {
+.tags {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.v-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.h-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    max-width:10vw;
+}
+
+.card {
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    border: 3px solid;
+}
+
+.card > a > img {
+    height:auto;
+    width: 100%;
+}
+
+span {
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    font-size: 16px;
+}
+
+/* larger mobile devices/tablets */
+
+@media all and (min-width: 768px)  {
     .hori > * {
         flex: 1 auto;
     }
-}*/
+}
+
+/* full size computer screens */
+
+@media all and (min-width: 1024px)  {
+    .hori > * {
+        flex: 1 auto;
+    }
+}
 
 /*.container {
     display: flex;
