@@ -79,16 +79,18 @@ chevron_link = "https://www.purinamills.com/2.purinamills.com/media/Images/Artic
 var start='<div class="row">'
 function load_cards(letter, terms){
 	for (i=0; i< test_json.length; i++){
-		var html_out = '<div class="card"><div class="v-container">'
-		html_out += '<a href='+test_json[i].link + '><span>' + test_json[i].name + '</span></a>'
-		html_out += '<span>' + test_json[i].desc + '</span>'
+		var html_out = '<div class="card"><div class="v-container"><div class="h-container"><div class="v-container">'
+		html_out += '<a href='+test_json[i].link + '><span class="card-text">' + test_json[i].name + '</span></a>'
+		html_out += '<span class="card-text">' + test_json[i].desc + '</span>'
+		html_out += '</div>'
+		html_out += '<a href='+test_json[i].link + '><img class="card-img" src= '+ chevron_link +'></a>'
+		html_out += '</div>'
 		html_out += '<div class="row">'
 		for (var j=0; j < test_json[i].tags.length; j++){
 			html_out += '<span>'+test_json[i].tags[j]+'</span>'
 		}
 		html_out += '</div></div>'
-		html_out += '<a href='+test_json[i].link + '><img src= '+ chevron_link +'></a></div></div>'
-		console.log(html_out)
+		//console.log(html_out)
 		document.getElementById('cards').innerHTML += html_out
 	}
 }

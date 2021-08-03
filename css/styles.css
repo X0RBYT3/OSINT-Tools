@@ -107,14 +107,15 @@ button {
 .v-container {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: flex-start;
+    width: 100%;
 }
 
 .h-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    max-width:10vw;
+    justify-content: space-between;
+    width: 50%;
 }
 
 .card {
@@ -124,7 +125,15 @@ button {
     border: 3px solid;
 }
 
-.card > a > img {
+.card-text {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border-bottom: 1px solid red;
+}
+
+.card-img {
     height:auto;
     width: 100%;
 }
