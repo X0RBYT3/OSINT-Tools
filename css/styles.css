@@ -111,6 +111,11 @@ button {
     width: 100%;
 }
 
+.card-layout {
+    height: 100%;
+    width: 100%;
+}
+
 .h-container {
     display: flex;
     flex-direction: row;
@@ -118,24 +123,45 @@ button {
     width: 50%;
 }
 
+.main-card {
+    height: 75%;
+    width: 100%;
+}
+
 .card {
     display:flex;
     flex-direction:row;
     justify-content: space-between;
-    border: 3px solid;
+    /* border: 3px solid black; */
+    background-color: #c0ff33;
+    margin-bottom:2vw;
 }
 
 .card-text {
     display: block;
-    white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
     border-bottom: 1px solid red;
 }
 
+.text-rows {
+    width: 50%;
+}
+
+.description {
+    width: auto;
+    height: 100%;
+    overflow-y: scroll;
+}
+
 .card-img {
     height:auto;
     width: 100%;
+}
+
+.card-img-wrapper {
+    height:auto;
+    width: 50%;
 }
 
 span {

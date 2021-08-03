@@ -52,7 +52,7 @@ searchField.addEventListener("keyup", function(event) {
 // Clear text and keep searchbar in focus
 function search() {
 	if (searchField.value != "") {
-		var val = searchField.value;
+		let val = searchField.value;
 		window.open(searchUrl + val, "_self");
 	}
 }
@@ -72,32 +72,28 @@ function cycledown() {
 	if (selected == 0) selector.selectedIndex = selector.options.length - 1;
 	else selector.selectedIndex--;
 }
-var letter = ' '
-var terms = []
-// Flo's code
+
+let terms = []
+// Flo's code, but uh, milk modified it too <3
 chevron_link = "https://www.purinamills.com/2.purinamills.com/media/Images/Articles/PSW_EcoCare-Feeds-Help-Reduce-Ammonia-in-Pork-Production_Tile-Image.jpg?ext=.jpg"
-var start='<div class="row">'
+let start='<div class="row">'
 function load_cards(letter, terms){
-	for (i=0; i< test_json.length; i++){
-		var html_out = '<div class="card"><div class="v-container"><div class="h-container"><div class="v-container">'
+	for (let i=0; i < test_json.length; i++){
+		let html_out = '<div class="card"><div class="v-container card-layout"><div class="h-container main-card"><div class="v-container text-rows">'
 		html_out += '<a href='+test_json[i].link + '><span class="card-text">' + test_json[i].name + '</span></a>'
-		html_out += '<span class="card-text">' + test_json[i].desc + '</span>'
+		html_out += '<span class="card-text description">' + test_json[i].desc + '</span>'
 		html_out += '</div>'
-		html_out += '<a href='+test_json[i].link + '><img class="card-img" src= '+ chevron_link +'></a>'
+		html_out += '<a class="card-img-wrapper" href='+test_json[i].link + '><img class="card-img" src= '+ chevron_link +'></a>'
 		html_out += '</div>'
 		html_out += '<div class="row">'
-		for (var j=0; j < test_json[i].tags.length; j++){
+		for (let j=0; j < test_json[i].tags.length; j++){
 			html_out += '<span>'+test_json[i].tags[j]+'</span>'
 		}
 		html_out += '</div></div>'
-		//console.log(html_out)
 		document.getElementById('cards').innerHTML += html_out
 	}
 }
-//var html_out = '<div class="card"><div class="v-container">'
-//		html_out += '</div></div>'
-document.getElementById('cards').innerHTML = html_out
+
 function loadFunctions(){
 	load_cards("", "")
-	return
 }
