@@ -92,11 +92,27 @@ button {
     padding: 1vw;
     text-align: center;
 }
+ /* tag related css */
 
 .tags {
     display: flex;
     flex-direction: column;
+    background-color: #c0ff33;
+    margin-inline: 10vw;
 }
+
+.tag-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 24px;
+}
+
+.tag {
+    font-size: 16px;
+}
+
+ /* card related css */
 
 .row {
     display: flex;
