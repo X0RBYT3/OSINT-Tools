@@ -1,9 +1,4 @@
-<p align="center">
-  <img
-      length=200
-      height=200
-       src=https://raw.githubusercontent.com/gist/Nekurone/016ecbad6fafba05bd5d7e5bc223907a/raw/80a7517ad5d1b16c32fba13599040855d0c27e39/pig.svg>
-</p>
+<h1 align="center"><a href="x0rbyt3.github.io/PIG-Tools/">NEW SITE!</a></h1>
 <h1 align="center" >PIG: A website to find online OSINT tools</h1>
 <p align="center"><a href="https://forthebadge.com" target="_blank"><img src="https://forthebadge.com/images/badges/built-with-love.svg" alt="Build with <3" /></a>&nbsp;<a href="https://forthebadge.com" target="_blank"><img src="https://forthebadge.com/images/badges/powered-by-coffee.svg"/></p>
 <p align="center">
@@ -58,7 +53,7 @@ So Ye wish to contribute eh? Pop open [the issues tab](https://github.com/Nekuro
 
 Why not take a look at [our list of contributors](https://github.com/Nekurone/PIG-Tools/graphs/contributors), We're sure you'd look good up there too :)
 
-< a name="The List"></a>
+<a name="The List"></a>
 <h2 align="center">The List</h2>
 
 
