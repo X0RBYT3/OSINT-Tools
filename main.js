@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Fetch JSON data from GitHub
   fetch(
-    "https://raw.githubusercontent.com/X0RBYT3/PIG-Tools/main/resources.json"
+    "https://raw.githubusercontent.com/X0RBYT3/OSINT-Tools/main/resources.json"
   )
     .then((response) => response.json())
     .then((jsonData) => {
